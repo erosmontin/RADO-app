@@ -1,0 +1,110 @@
+{
+    "version": "v0",
+    "alias": "ExampleJob",
+    "output": {
+        "matlab": true
+    },
+    "pipeline": "019bbe8a-6655-34cb-8265-fbf36a4cdbfa", 
+    "token": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9jYW5jZWxpdC1lbnYtMS5lYmEtcG1hbWN1djUudXMtZWFzdC0xLmVsYXN0aWNiZWFuc3RhbGsuY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNzAyNzQwODY2LCJleHAiOjE3MDI4MjcyNjYsIm5iZiI6MTcwMjc0MDg2NiwianRpIjoiU2JUZU9mdFA3VExRaDRoRyIsInN1YiI6OTk5OSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.fYIT9t8AlnQG9MixsQPfRJUk4-hhTW72_FS2pYY5jK4",
+    "task": {
+        "name": "TESS",
+        "queued": false,
+        "version": "v0",
+        "type": "TE",
+        "files": [
+            "materialDensity",
+            "bloodPerfusion",
+            "heatCapacity",
+            "thermalConductivity",
+            "metabolismHeat",
+            "SAR",
+            "tOld",
+            "mask"
+        ],
+        "options": {
+            "air": {
+                "capacity": null,
+                "density": null,
+                "temperature": 296
+            },
+            "blood": {
+                "capacity": 1057,
+                "density": 3600,
+                "temperature": 200
+            },
+            "heatingtime": 4,
+            "mask": {
+                "type": "file",
+                "id": -1,
+                "options": {
+                    "type": "local",
+                    "filename": "/data/PROJECTS/tess/testdata/Head/MaterialDensity.nii.gz",
+                    "options": {}
+                }
+            },
+            "materialDensity": {
+                "type": "file",
+                "id": 0,
+                "options": {
+                    "type": "local",
+                    "filename": "/data/PROJECTS/tess/testdata/Head/MaterialDensity.nii.gz",
+                    "options": {}
+                }
+            },
+            "bloodPerfusion": {
+                "type": "file",
+                "id": 1,
+                "options": {
+                    "type": "local",
+                    "filename": "/data/PROJECTS/tess/testdata/Head/BloodPerfusion.nii.gz",
+                    "options": {}
+                }
+            },
+            "heatCapacity": {
+                "type": "file",
+                "id": 2,
+                "options": {
+                    "type": "local",
+                    "filename": "/data/PROJECTS/tess/testdata/Head/HeatCapacity.nii.gz",
+                    "options": {}
+                }
+            },
+            "thermalConductivity": {
+                "type": "file",
+                "id": 3,
+                "options": {
+                    "type": "local",
+                    "filename": "/data/PROJECTS/tess/testdata/Head/ThermalConductivity.nii.gz",
+                    "options": {}
+                }
+            },
+            "metabolismHeat": {
+                "type": "file",
+                "id": 4,
+                "options": {
+                    "type": "local",
+                    "filename": "/data/PROJECTS/tess/testdata/Head/Metabolism.nii.gz",
+                    "options": {}
+                }
+            },
+            "SAR": {
+                "type": "file",
+                "id": 5,
+                "options": {
+                    "type": "local",
+                    "filename": "/data/PROJECTS/tess/testdata/Head/SAR.nii.gz",
+                    "options": {}
+                }
+            },
+            "tOld": {
+                "type": "file",
+                "id": 6,
+                "options": {
+                    "type": "local",
+                    "filename": "/data/PROJECTS/tess/testdata/Head/TOld.nii.gz",
+                    "options": {}
+                }
+            }
+        }
+    }
+}

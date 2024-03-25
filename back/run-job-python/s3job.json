@@ -1,0 +1,126 @@
+{
+    "task": {
+        "name": "TESS",
+        "queued": false,
+        "version": "v0",
+        "type": "TE",
+        "files": [
+            "materialDensity",
+            "bloodPerfusion",
+            "heatCapacity",
+            "thermalConductivity",
+            "metabolismHeat",
+            "SAR",
+            "tOld",
+            "mask"
+        ],
+        "options": {
+            "air": {
+                "capacity": null,
+                "density": null,
+                "temperature": 296
+            },
+            "blood": {
+                "capacity": 1057,
+                "density": 3600,
+                "temperature": 200
+            },
+            "heatingtime": 4,
+            "mask": {
+                "type": "file",
+                "id": -1,
+                "options": {
+                    "type": "s3",
+                    "filename": "MaterialDensity.nii.gz",
+                    "bucket": "mytestcmr",
+                    "key": "MaterialDensity.nii.gz",
+                    "options": {}
+                }
+            },
+            "materialDensity": {
+                "type": "file",
+                "id": 0,
+                "options": {
+                    "type": "s3",
+                    "filename": "MaterialDensity.nii.gz",
+                    "bucket": "mytestcmr",
+                    "key": "MaterialDensity.nii.gz",
+                    "options": {}
+                }
+            },
+            "bloodPerfusion": {
+                "type": "file",
+                "id": 1,
+                "options": {
+                    "type": "s3",
+                    "filename": "BloodPerfusion.nii.gz",
+                    "bucket": "mytestcmr",
+                    "key": "BloodPerfusion.nii.gz",
+                    "options": {}
+                }
+            },
+            "heatCapacity": {
+                "type": "file",
+                "id": 2,
+                "options": {
+                    "type": "s3",
+                    "filename": "HeatCapacity.nii.gz",
+                    "bucket": "mytestcmr",
+                    "key": "HeatCapacity.nii.gz",
+                    "options": {}
+                }
+            },
+            "thermalConductivity": {
+                "type": "file",
+                "id": 3,
+                "options": {
+                    "type": "s3",
+                    "filename": "ThermalConductivity.nii.gz",
+                    "bucket": "mytestcmr",
+                    "key": "ThermalConductivity.nii.gz",
+                    "options": {}
+                }
+            },
+            "metabolismHeat": {
+                "type": "file",
+                "id": 4,
+                "options": {
+                    "type": "s3",
+                    "filename": "Metabolism.nii.gz",
+                    "bucket": "mytestcmr",
+                    "key": "Metabolism.nii.gz",
+                    "options": {}
+                }
+            },
+            "SAR": {
+                "type": "file",
+                "id": 5,
+                "options": {
+                    "type": "s3",
+                    "filename": "SAR.nii.gz",
+                    "bucket": "mytestcmr",
+                    "key": "SAR.nii.gz",
+                    "options": {}
+                }
+            },
+            "tOld": {
+                "type": "file",
+                "id": 6,
+                "options": {
+                    "type": "s3",
+                    "bucket": "mytestcmr",
+                    "key": "TOld.nii.gz",
+                    "filename": "TOld.nii.gz",
+                    "options": {}
+                }
+            }
+        }
+    },
+    "output": {
+        "matlab": true
+    },
+    "application": "TESS",
+    "alias": "first job!",
+    "pipeline": "777e85b2-53d8-3ba3-b9f1-88b8c8a80e58",
+    "token": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9jYW5jZWxpdC1lbnYtMS5lYmEtcG1hbWN1djUudXMtZWFzdC0xLmVsYXN0aWNiZWFuc3RhbGsuY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNzA2MjA1MTMxLCJleHAiOjE3MDYyOTE1MzEsIm5iZiI6MTcwNjIwNTEzMSwianRpIjoiSUpEa1oxeVg3U0VLR0NIUCIsInN1YiI6OTk5OSwicHJ2IjoiODdlMGFmMWVmOWZkMTU4MTJmZGVjOTcxNTNhMTRlMGIwNDc1NDZhYSJ9.SSKai6lHh12RCMDCmDBB2hpCwbojr734V4XcOM10sns"
+}

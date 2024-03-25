@@ -1,0 +1,1 @@
+docker build --build-arg GIT_TOKEN=$GitToken -t tess-aws ./run-job-python/ 

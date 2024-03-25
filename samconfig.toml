@@ -1,0 +1,9 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "rado-app-backend"
+resolve_s3 = true
+s3_prefix = "rado-app-backend"
+region = "us-east-1"
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "CortexHost=\"cancelit-env-1.eba-pmamcuv5.us-east-1.elasticbeanstalk.com\" JobsBucketPName=\"radoj\" ResultsBucketPName=\"rador\" DataBucketPName=\"radod\" FailedBucketPName=\"radof\""
+image_repositories = ["RunJobFunction=469266894233.dkr.ecr.us-east-1.amazonaws.com/radoappbackendb496806d/runjobfunction4e7a3b68repo"]

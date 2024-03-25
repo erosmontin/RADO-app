@@ -50,47 +50,6 @@ Globals:
 
 
 Resources:
-
-  RADOAPI:
-    Type: 'AWS::Serverless::Api'
-    Properties:
-      Tags:
-        owner: "cloudmrhub" # kerberos/cloudmrhub
-        mantainer: "montie01" #kerberos
-        project: "mroptimum-v1" 
-        team: "cloudmrhub"
-        status: "dev" # dev/test/prod
-        deletabale: "yes" # yes/maybe/check/no
-
-      StageName: Prod
-      CacheClusterEnabled: false
-      Cors:
-        AllowMethods: "'POST,GET,PUT,DELETE,OPTIONS'"
-        AllowOrigin: "'*'"
-        AllowHeaders: "'*'"
-
-      Auth:
-        AddDefaultAuthorizerToCorsPreflight: false
-        DefaultAuthorizer: UserAuthorizer
-        Authorizers:
-          UserAuthorizer:
-            FunctionArn: !GetAtt UserAuthorizerFunction.Arn
-            Identity:
-              ReauthorizeEvery: 0
-  ApplicationResourceGroup:
-    Type: AWS::ResourceGroups::Group
-    Properties:
-      Name:
-        Fn::Sub: ApplicationInsights-SAM-${AWS::StackName}
-      ResourceQuery:
-        Type: CLOUDFORMATION_STACK_1_0
-  ApplicationInsightsMonitoring:
-    Type: AWS::ApplicationInsights::Application
-    Properties:
-      ResourceGroupName:
-        Ref: ApplicationResourceGroup
-      AutoConfigurationEnabled: true
-
   JobsBucket:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Delete
@@ -185,4 +144,24 @@ Resources:
             - "*"
 
 Outputs:
+  FailedBucketName:
+    Description: The name of the S3 bucket
+    Value: !Ref FailedBucketPName
+    Export:
+      Name: RadoFailedBucketName
+  DataBucketName:
+    Description: The name of the S3 bucket
+    Value: !Ref DataBucketPName
+    Export:
+      Name: RadoDataBucketName
+  JobsBucketName:
+    Description: The name of the S3 bucket
+    Value: !Ref JobsBucketPName
+    Export:
+      Name: RadoJobsBucketName
+  ResultsBucketName:
+    Description: The name of the S3 bucket
+    Value: !Ref ResultsBucketPName
+    Export:
+      Name: RadoResultsBucketName
 

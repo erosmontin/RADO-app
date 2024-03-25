@@ -1,0 +1,38 @@
+{
+    "Records": [
+        {
+            "eventVersion": "2.1",
+            "eventSource": "aws:s3",
+            "awsRegion": "us-east-1",
+            "eventTime": "2024-01-25T18:14:19.437Z",
+            "eventName": "ObjectCreated:Put",
+            "userIdentity": {
+                "principalId": "AWS:AROAW2QT4RWMRKD6NILXH:tessv1-QueueJobFunction-M1P8H9VJQujK"
+            },
+            "requestParameters": {
+                "sourceIPAddress": "44.220.245.231"
+            },
+            "responseElements": {
+                "x-amz-request-id": "7XH5Z3JX0MSEBZZ1",
+                "x-amz-id-2": "aSlPvtgETEx4+cx/2pidw+xVVYA6zKrbNkLb9b/jn/KkCVckLmMghbO5rKf//6MBIzexFAB3IIDS3RSOQ01c5pix689YZxbA"
+            },
+            "s3": {
+                "s3SchemaVersion": "1.0",
+                "configurationId": "ZTY4ZmVkMjQtYTdiZi00YjMyLWI2NzUtYjI3MWRhMGU5ZmYx",
+                "bucket": {
+                    "name": "tess-j",
+                    "ownerIdentity": {
+                        "principalId": "A3MJ0EXDKKHTKU"
+                    },
+                    "arn": "arn:aws:s3:::tess-j"
+                },
+                "object": {
+                    "key": "773224ef-ab36-3ea1-9f13-88de8637fd97.json",
+                    "size": 2140,
+                    "eTag": "8e712ca910195d25ec8953ba7c55737b",
+                    "sequencer": "0065B2A4FB64D13352"
+                }
+            }
+        }
+    ]
+}

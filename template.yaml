@@ -206,7 +206,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Description: >
-        This function runs the Mroptium computation (it is the muscle worker).
+        This function runs the RADO computation (it is the muscle worker).
         It should be triggered when an object is created in the jobs bucket.
       PackageType: Image
       Timeout: 900

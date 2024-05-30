@@ -1,3 +1,0 @@
-sam build -use-container && sam deply --guided
-
-

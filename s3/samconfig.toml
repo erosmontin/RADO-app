@@ -1,9 +1,0 @@
-version = 0.1
-[default.deploy.parameters]
-stack_name = "rado-app"
-resolve_s3 = true
-s3_prefix = "rado-app"
-region = "us-east-1"
-capabilities = "CAPABILITY_IAM"
-parameter_overrides = "CortexHost=\"cancelit-env-1.eba-pmamcuv5.us-east-1.elasticbeanstalk.com\" JobsBucketPName=\"radoj\" ResultsBucketPName=\"rador\" DataBucketPName=\"radod\" FailedBucketPName=\"radof\""
-image_repositories = []

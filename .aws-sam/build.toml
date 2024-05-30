@@ -10,11 +10,11 @@ manifest_hash = ""
 packagetype = "Zip"
 functions = ["UserAuthorizerFunction"]
 
-[function_build_definitions.587eab64-7e4d-487f-8499-dc07d83f6ca2]
+[function_build_definitions.1faf6020-0058-4969-9a83-7a9e58eee7e1]
 packagetype = "Image"
 functions = ["RunJobFunction"]
 
-[function_build_definitions.587eab64-7e4d-487f-8499-dc07d83f6ca2.metadata]
+[function_build_definitions.1faf6020-0058-4969-9a83-7a9e58eee7e1.metadata]
 Dockerfile = "Dockerfile"
 DockerContext = "/data/PROJECTS/Architecture/RADO-app/back/run-job-python"
 DockerTag = "python3.10-v1"

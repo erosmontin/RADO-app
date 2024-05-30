@@ -22,4 +22,4 @@ Outputs:
     Description: Requests Layer ARN
     Value: !Ref RequestsLayer
     Export:
-      Name: Requests
+      Name: ZoeyRequests

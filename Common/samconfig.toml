@@ -1,8 +1,8 @@
 version = 0.1
 [default.deploy.parameters]
-stack_name = "TEST"
+stack_name = "zoeyrequest"
 resolve_s3 = true
-s3_prefix = "TEST"
+s3_prefix = "zoeyrequest"
 region = "us-east-1"
 capabilities = "CAPABILITY_IAM"
 image_repositories = []
